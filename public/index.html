@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tris online</title>
+  <script type="module" src="main.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="game-container">
+    <h1>Tris</h1>
+    <div class="game-board">
+      <!-- TODO: Qui verrà generata la griglia di gioco -->
+      <div class="grid">
+      </div>
+    </div>
+  </div>
+  <script>
+    const totalCells = 9;
+    const grid = document.querySelector('.grid');
+    // preparazione del quadrato di gioco
+    let blackcell = true;
+    for (let i = 1; i <= totalCells; i++) {
+      const cell = document.createElement('div');
+      cell.classList.add('cell');
+      if (blackcell) {
+        cell.classList.add('cell-dark');
+      }
+      blackcell = !blackcell;
+      // console.log(blackcell);
+      grid.appendChild(cell);
+    }
+  </script>
+</body>
+
+</html>

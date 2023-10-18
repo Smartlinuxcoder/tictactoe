@@ -1,0 +1,47 @@
+/* CSS RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Regole generiche */
+body {
+	padding: 16px;
+	line-height: 1;
+	color: rgb(0, 23, 50);
+	background-color: rgb(216, 238, 232);
+	font-family: 'Darker Grotesque', sans-serif;
+}
+
+.game-container {
+	width: 148px;
+}
+/* Pannello di gioco */
+h1 {
+	font-size: 40px;
+}
+.game-board {
+	position: relative;
+	border: 2px solid rgb(0, 23, 50);
+}
+
+.grid {
+	height: 144px;
+	width: 144px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.cell {
+    border: 2px solid rgb(0, 23, 50);
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+	/* border: 1px dashed black; */
+}
+
+.cell-dark {
+	background-color: rgb(203, 224, 221);
+}

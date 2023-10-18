@@ -1,0 +1,5 @@
+you look for available games
+if there arent:
+    create an entry in the realtime database and wait for someone to enter
+
+you enter a game: you and the player create an entry in the firebase database and the game starts
